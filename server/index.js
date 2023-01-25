@@ -17,8 +17,8 @@ app.use(express.json());
 // connect to mongodb
 db()
 
-app.get("/", (req, res) => {
-    res.send("hello world")
+app.get("/api/", (req, res) => {
+    res.send("wellcome to todo api")
 })
 
 app.use("/api/todos", TodoRouter);
