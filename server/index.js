@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
 app.use("/api/todos", TodoRouter);
 
 app.use((req, res, next) => {
-    next(createError(404, "can not get data for this route"));
+    next(createError(404, "route not found"));
 })
 
 app.use(error_handler);
